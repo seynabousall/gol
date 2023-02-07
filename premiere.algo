@@ -1,0 +1,15 @@
+ALGORITHM phrase
+VAR
+    texte:STRING[];
+    n,i:entier;
+BEGIN
+    write("entrez la phrase:")
+    read(texte)
+    n=0
+    FOR i FROM 0 TO length(texte)-1 STEP 1 DO
+
+        IF (texte[i]='a' ou texte[i]='e' ou texte[i]='o' ou texte[i]='u' ou texte[i]='i' ou texte[i]='y') THEN
+            n=n+1
+        END_IF
+    END_FOR
+END

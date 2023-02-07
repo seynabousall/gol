@@ -1,0 +1,27 @@
+ALGORITHM 
+VAR
+    t1,t2,n,i,som:INTEGER;
+BEGIN
+    write('entrez les èlèments du premier tableau')
+FOR i FROM 1 TO n STEP 1 DO
+        read(t1[i])
+END_FOR
+    write('entrez les èlèments du deuxieme tableau')
+        FOR i FROM 1 TO n STEP 1 DO
+    read(t2[i])
+        END_FOR
+        som=0
+IF (t1[i]!=t2[i]) THEN
+    FOR i FROM 0 TO n STEP 1 DO
+        som=t1[i]+t2[i]
+        write('la somme est:',som)
+    END_FOR
+ELSE_IF (t2[i]!=t1[i]) THEN
+    FOR i FROM 0 TO n STEP 1  DO
+        som=t2[i]+t1[i]
+        write('la somme est:',som)
+    END_FOR
+ELSE
+    write('pas de somme')
+END_IF
+END
