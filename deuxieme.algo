@@ -25,5 +25,7 @@ ELSE_IF (t2[i]!=t1[i]) THEN
 ELSE
     write('pas de somme')
 END_IF
+    i=i+1
     END_WHILE
+
 END
